@@ -2,8 +2,11 @@ import json
 
 
 def main(event, context):
-    return json.dumps(
-        {
-            "message": "Hello, World!",
-        }
-    )
+    return {
+        "statusCode": 200,
+        "body": json.dumps(
+            {
+                "message": "Hello, World!",
+            }
+        ),
+    }
