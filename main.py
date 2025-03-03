@@ -1,2 +1,4 @@
 def main(event, context):
-    return "Hello, World!"
+    return {
+        "message": "Hello, World!",
+    }
